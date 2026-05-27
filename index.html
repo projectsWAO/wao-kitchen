@@ -3,31 +3,159 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#a73e3a" />
 
-  <title>WAO Kitchen</title>
-  <meta name="description" content="" />
+  <title>WAO Kitchen · Bar, ristorante ed eventi in Isola</title>
+  <meta name="description" content="WAO Kitchen è il bar ristorante di WAO in via Ugo Bassi 8, quartiere Isola. Colazione, pranzo e aperitivo dal lunedì al venerdì 08-21." />
 
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="restaurant.restaurant" />
   <meta property="og:title" content="WAO Kitchen" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
-
+  <meta property="og:description" content="Bar, ristorante ed eventi in Isola. Colazione, pranzo e aperitivo nel mondo WAO." />
+  <meta property="og:image" content="assets/img/hero-fallback.jpg" />
+  <meta property="og:url" content="https://kitchen.waospaces.it/" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Gabarito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-  </header>
 
-  <main class="site-main">
-    <h1 class="coming-soon">WAO KITCHEN — COMING SOON</h1>
-  </main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <video
+        class="hero__video"
+        autoplay muted loop playsinline preload="metadata"
+        poster="assets/img/hero-fallback.jpg">
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <img class="hero__logo" src="assets/img/logo-wao-kitchen-bianco.png" alt="WAO Kitchen" />
+      <p class="hero__tagline">Bar, ristorante ed eventi in Isola</p>
+      <p class="hero__subline">Colazione, pranzo e aperitivo nel mondo <strong>WAO — We Are Open</strong></p>
+      <a class="hero__cta" href="#info">Scopri</a>
+    </div>
+  </section>
 
-  <footer class="site-footer">
+  <!-- INFO PRATICHE (sticky-like band) -->
+  <section class="info-band" id="info">
+    <div class="info-band__item">
+      <span class="info-band__label">Orari</span>
+      <span class="info-band__value">Lun – Ven<br>08:00 – 21:00</span>
+    </div>
+    <div class="info-band__item">
+      <span class="info-band__label">Dove siamo</span>
+      <span class="info-band__value">Via Ugo Bassi, 8<br>Milano</span>
+    </div>
+    <div class="info-band__item">
+      <span class="info-band__label">Contatti</span>
+      <span class="info-band__value">
+        <a href="tel:+393930581168">393 058 1168</a><br>
+        <a href="https://www.instagram.com/wao_it/" target="_blank" rel="noopener">@wao_it</a>
+      </span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <h2 class="about__title">Un posto aperto<br>alla città.</h2>
+      <div class="about__text">
+        <p><strong>WAO Kitchen</strong> è il bar ristorante di <strong>WAO — We Are Open</strong>, rete di spazi di coworking, eventi e ristorazione a Milano.</p>
+        <p>Situato in <strong>via Ugo Bassi 8</strong>, nel quartiere <strong>Isola</strong>, all'interno del Bassi Business Park, WAO Kitchen è aperto dal lunedì al venerdì dalle 8 alle 21 per colazioni, pranzi e aperitivi in un ambiente informale, luminoso e aperto alla città.</p>
+        <p>Lo spazio interno può ospitare fino a <strong>80 persone</strong>, mentre il <strong>dehors esterno</strong> accoglie oltre 70 posti tra tavoli, aree conviviali e biliardini pensati per una pausa, un incontro informale o semplicemente un momento di relax.</p>
+        <p>Come tutti gli spazi WAO, anche WAO Kitchen ospita <strong>eventi, incontri e momenti di community</strong> ed è disponibile per <strong>eventi privati</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY INTERNI -->
+  <section class="gallery" id="gallery">
+    <h2 class="section-title">Lo spazio</h2>
+    <div class="gallery__grid">
+      <figure class="gallery__item gallery__item--lg">
+        <img src="assets/img/interno-1.jpg" alt="Sala interna di WAO Kitchen" loading="lazy">
+      </figure>
+      <figure class="gallery__item">
+        <img src="assets/img/interno-2.jpg" alt="Dehors esterno di WAO Kitchen" loading="lazy">
+      </figure>
+      <figure class="gallery__item">
+        <img src="assets/img/interno-3.jpg" alt="Area conviviale di WAO Kitchen" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- PIATTI -->
+  <section class="dishes" id="piatti">
+    <div class="dishes__head">
+      <h2 class="section-title section-title--light">In cucina</h2>
+      <p class="dishes__intro">Tramezzini, focacce, insalate, paste, secondi. Cucina semplice, ingredienti veri.</p>
+    </div>
+    <div class="dishes__grid">
+      <figure class="dishes__item">
+        <img src="assets/img/piatto-1.jpg" alt="Piatto WAO Kitchen" loading="lazy">
+      </figure>
+      <figure class="dishes__item">
+        <img src="assets/img/piatto-2.jpg" alt="Piatto WAO Kitchen" loading="lazy">
+      </figure>
+      <figure class="dishes__item">
+        <img src="assets/img/piatto-3.jpg" alt="Piatto WAO Kitchen" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- MENU CTA -->
+  <section class="menu-cta" id="menu">
+    <div class="menu-cta__inner">
+      <h2 class="menu-cta__title">Il menù</h2>
+      <p class="menu-cta__text">Dai un'occhiata a quello che cuciniamo, dai tramezzini ai piatti del giorno.</p>
+      <a class="menu-cta__btn" href="assets/menu/wao-kitchen-menu.pdf" target="_blank" rel="noopener">
+        Scarica il menù (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- EVENTI PRIVATI -->
+  <section class="events" id="eventi">
+    <div class="events__inner">
+      <h2 class="section-title">Eventi privati</h2>
+      <p class="events__text">WAO Kitchen è disponibile per cene, aperitivi, presentazioni e momenti di community. Scrivici o chiamaci per organizzare il tuo evento.</p>
+      <div class="events__actions">
+        <a class="btn btn--ghost" href="tel:+393930581168">Chiama 393 058 1168</a>
+        <a class="btn btn--ghost" href="https://www.instagram.com/wao_it/" target="_blank" rel="noopener">Scrivici su Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contatti">
+    <div class="site-footer__grid">
+      <div class="site-footer__col">
+        <img class="site-footer__logo" src="assets/img/logo-wao-kitchen-bianco.png" alt="WAO Kitchen">
+      </div>
+      <div class="site-footer__col">
+        <h3 class="site-footer__h">Indirizzo</h3>
+        <p>Via Ugo Bassi, 8<br>20159 Milano</p>
+        <p><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4786c1b057720b91:0x7d6c3093951c675e?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener">Apri su Google Maps →</a></p>
+      </div>
+      <div class="site-footer__col">
+        <h3 class="site-footer__h">Orari</h3>
+        <p>Lunedì – Venerdì<br>08:00 – 21:00</p>
+      </div>
+      <div class="site-footer__col">
+        <h3 class="site-footer__h">Contatti</h3>
+        <p><a href="tel:+393930581168">393 058 1168</a></p>
+        <p><a href="https://www.instagram.com/wao_it/" target="_blank" rel="noopener">Instagram @wao_it</a></p>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <small>© WAO — We Are Open · WAO Kitchen, Milano</small>
+    </div>
   </footer>
 
   <script src="assets/js/main.js" defer></script>
