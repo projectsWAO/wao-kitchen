@@ -12,6 +12,7 @@
   --wao-kitchen:      #a73e3a;
   --wao-kitchen-dark: #8d3431;
   --wao-cream-bright: #fff5d4;
+  --wao-gold:         #d9b25f;
 
   /* Tipografia */
   --font-display: "Oswald", system-ui, sans-serif;
@@ -365,6 +366,59 @@ h1, h2, h3, h4 {
   background: var(--wao-kitchen);
   color: var(--wao-cream-bright);
 }
+
+/* ---------- NATALE 2026 ---------- */
+.xmas {
+  background: var(--wao-kitchen);
+  color: var(--wao-cream-bright);
+  padding: var(--section-py) var(--pad-x);
+  text-align: center;
+  border-top: 6px solid var(--wao-kitchen-dark);
+  border-bottom: 6px solid var(--wao-kitchen-dark);
+}
+.xmas__inner { max-width: 760px; margin: 0 auto; }
+.xmas__star {
+  display: block;
+  color: var(--wao-gold);
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.xmas__title { margin-bottom: clamp(16px, 2.5vw, 24px); }
+.xmas__lead {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  font-size: clamp(18px, 2.4vw, 24px);
+  margin: 0 0 14px;
+}
+.xmas__text {
+  font-size: clamp(16px, 1.8vw, 19px);
+  opacity: 0.92;
+  max-width: 640px;
+  margin: 0 auto 36px;
+}
+.xmas__actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn--cream {
+  background: var(--wao-cream-bright);
+  color: var(--wao-kitchen-dark);
+  border: 2px solid var(--wao-cream-bright);
+}
+.btn--cream:hover { background: #fff; border-color: #fff; transform: translateY(-2px); }
+.btn--ghost-cream {
+  border: 2px solid var(--wao-cream-bright);
+  color: var(--wao-cream-bright);
+  background: transparent;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+.btn--ghost-cream:hover { background: var(--wao-cream-bright); color: var(--wao-kitchen-dark); }
 
 /* ---------- FOOTER ---------- */
 .site-footer {
