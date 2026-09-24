@@ -463,3 +463,37 @@ h1, h2, h3, h4 {
 @media (max-width: 520px) {
   .site-footer__grid { grid-template-columns: 1fr; }
 }
+
+/* ---------- Menu WAO condiviso (sopra l'hero) ---------- */
+.site-nav {
+  position: absolute; top: 0; left: 0; right: 0;
+  z-index: 5;
+  display: flex; align-items: center; gap: 24px;
+  padding: 18px var(--pad-x);
+  color: #fff;
+  font-family: var(--font-body);
+}
+.site-nav__brand {
+  font-family: var(--font-display);
+  font-weight: 700; font-size: 22px; letter-spacing: 0.04em;
+  color: #fff; text-decoration: none;
+}
+.site-nav__list {
+  list-style: none; margin: 0 0 0 auto; padding: 0;
+  display: flex; gap: 22px; flex-wrap: nowrap;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.site-nav__list::-webkit-scrollbar { display: none; }
+.site-nav__list a {
+  color: rgba(255,255,255,0.88); text-decoration: none;
+  font-size: 15px; font-weight: 600; white-space: nowrap;
+  border-bottom: 2px solid transparent; padding-bottom: 2px;
+  transition: color .15s, border-color .15s;
+}
+.site-nav__list a:hover { color: #fff; border-color: var(--wao-gold); }
+@media (max-width: 720px) {
+  .site-nav { gap: 14px; padding: 14px var(--pad-x); }
+  .site-nav__list { gap: 16px; }
+  .site-nav__list a { font-size: 14px; }
+}
