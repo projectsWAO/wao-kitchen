@@ -497,3 +497,6 @@ h1, h2, h3, h4 {
   .site-nav__list { gap: 16px; }
   .site-nav__list a { font-size: 14px; }
 }
+/* Voce stagionale Natale (Giulia 25/09/2026): togliere dopo le feste */
+.site-nav__list a.site-nav__xmas { color: var(--wao-gold); }
+.site-nav__list a.site-nav__xmas:hover { color: #fff; border-color: var(--wao-gold); }
