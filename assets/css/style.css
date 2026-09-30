@@ -139,6 +139,23 @@ h1, h2, h3, h4 {
 }
 .hero__cta:hover { transform: translateY(-1px); background: #fff; }
 
+/* I due bottoni dell'hero: prenotare e' l'azione principale, "Scopri" resta a fianco
+   in versione leggera. Su telefono si impilano, che a 375px affiancati non ci stanno. */
+.hero__azioni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.hero__azioni .hero__cta { margin-top: 0; }
+.hero__cta--scopri {
+  background: transparent;
+  color: var(--wao-cream-bright);
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+.hero__cta--scopri:hover { background: var(--wao-cream-bright); color: var(--wao-kitchen-dark); }
+
 /* ---------- INFO BAND ---------- */
 .info-band {
   background: var(--wao-kitchen);
